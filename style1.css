@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+}
+body{
+	background-color: aquamarine;
+    text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	margin-top: 2%;
+	width: 900px;
+	height: 550px;
+	display: flex;
+	
+}
+.clock__contant{
+    flex-basis: 35%;
+	background-color: rgba(34, 194, 34, 0.678);
+	text-align: center;
+}
+.calendar__contant{
+	flex-basis: 65%;
+	background-color: white;
+}
+.contant{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 50px;
+}
+.contant-let{
+	flex-basis: 50%;
+	text-align: left;
+	padding-left: 30px;
+}
+.contant-right{
+	flex-basis: 50%;
+	text-align: right;
+	padding-right: 30px;
+}
+.time{
+	font-size: 22px;
+	color: white;
+}
+.moods{
+	font-size: 24px;
+	color: white;
+}
+h1.date{
+	font-size: 35px;
+	color: white;
+}
+h2.day{
+	font-size: 19px;
+	color: white;
+}
+.border{
+	width: 85%;
+	height: 3px;
+	background-color: white;
+	display: inline-block;
+}
+.months h3 {
+	margin: 5px 0;
+	text-align: center;
+}
+
+.days_container,
+.week_days_container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.days,
+.week_days {
+	font-size: 14px;
+	margin-bottom: 5px;
+	height: calc(100% / 7);
+	width: calc(100% / 7);
+	text-align: center;
+}
+.days{
+	padding: 15px;
+	font-size: 22px;
+	
+}
+.sodium{
+	background-color: rgb(68, 209, 92);
+	color: white;
+	padding: 10px;
+	border-radius: 8px;
+	position: relative;
+}
+.sodium::before{
+	content: '';
+    position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	top: 105%;
+	right: 40%;
+	background-color: rgb(68, 209, 92);
+}
+.calendar{
+	position: relative;
+	padding: 20px;
+}
+.fa-angle-right{
+	color: rgb(20, 223, 155);
+    position: absolute;
+	font-size: 35px;
+	top: 20px;
+	right: 120px;
+}
+.fa-angle-left{
+	color: rgb(20, 223, 155);
+    position: absolute;
+	font-size: 35px;
+	top: 20px;
+	left: 120px;
+}
+.months h3{
+	padding-bottom: 40px;
+	color: rgb(20, 223, 155);
+}
+.week_days{
+	text-transform: uppercase;
+	font-size: 20px;
+}
